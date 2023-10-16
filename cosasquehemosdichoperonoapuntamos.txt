@@ -1,0 +1,4 @@
+para las clases
+hacemos un archivo llamado clases
+    luego hacemos un objeto por cada tipo de pibe
+Tratar la clase como la raza
