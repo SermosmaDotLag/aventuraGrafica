@@ -14,8 +14,19 @@ export class Personaje{
     }
 
     hablar(texto){
-        let textoMejorado = `<br>${this.nombre}: "${texto}"`; //el this hace referencia al objeto antes del punto
-        document.getElementById('divHistoria').innerHTML += texto; //innerHTML es el texto dentro del div
+        const velocidadEscritura = 0 
+        let divHistoria = document.getElementById('divHistoria')
+        let i = 0;
+        const intervalo = setInterval(function() {
+            divHistoria.textContent += texto[i];
+            i++;
+            if (i >= texto.length) {
+                clearInterval(intervalo);
+            }
+        }, velocidadEscritura);
+        let textoMejorado = this.#nombre+':'+texto+'<br>' //el this hace referencia al objeto antes del punto
+        //document.getElementById('divHistoria').innerHTML += textoMejorado; //innerHTML es el texto dentro del div
+        
     }
 
     coger(objeto){
