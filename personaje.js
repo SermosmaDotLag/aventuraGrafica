@@ -14,17 +14,17 @@ export class Personaje{
     }
 
     hablar(texto){
+        let textoMejorado = this.#nombre+':'+texto+'<br>' //el this hace referencia al objeto antes del punto
         const velocidadEscritura = 0 
         let divHistoria = document.getElementById('divHistoria')
         let i = 0;
         const intervalo = setInterval(function() {
-            divHistoria.textContent += texto[i];
+            divHistoria.textContent += textoMejorado;
             i++;
-            if (i >= texto.length) {
+            if (i >= textoMejorado.length) {
                 clearInterval(intervalo);
             }
         }, velocidadEscritura);
-        let textoMejorado = this.#nombre+':'+texto+'<br>' //el this hace referencia al objeto antes del punto
         //document.getElementById('divHistoria').innerHTML += textoMejorado; //innerHTML es el texto dentro del div
         
     }

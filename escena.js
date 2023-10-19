@@ -13,7 +13,7 @@ export class Escena{
         document.getElementById('divHistoria').innerHTML = ' '
     }
     introducirimagen(imagen){
-        document.getElementById('divHistoria').innerHTML += '<img src=./imagenes/'+imagen+'>'
+        //document.getElementById('divHistoria').innerHTML += '<img src=./imagenes/'+imagen+'>'
     }
     escena1(){
         this.narrar('<i>Pipo el Gladiador era un guerrero de baja estatura que vivía en la mágica Ciudad de Eldoria, en el Reino de Arkania. A pesar de su pequeña estatura, tenía un corazón valiente y un espíritu indomable. Desde muy joven, Pipo soñaba con ser un gladiador, y a pesar de las burlas y el escepticismo de quienes lo rodeaban, se dedicó a entrenar incansablemente.')

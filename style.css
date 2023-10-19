@@ -1,7 +1,11 @@
 /*Equipo 5*/
 
 body{
+    position: relative;
     margin: 0 auto;
+    width: 1280px;
+    border: 1px black solid;
+    height: 720px;
 }
 
 h1{
@@ -16,17 +20,27 @@ img{
 
 #contenedor{
     color: #fff; /* Color del texto del footer */
-    padding: 10px; /* Espacio interior del footer */
-    position: fixed;
+    width: 95%;
+    position: absolute;
     bottom: 0;
-    width: 100%;
-    min-height: 200px;
-    transform: translateY(0);
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff; /* Cambia esto al color de texto que desees */
+    padding: 10px;
+    max-height: 300px;
+}
+
+#whosTalking{
+    max-height: 300px;
+    max-width: 200px;
+    border: 1px black solid;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
 }
 
 #divHistoria{
-    width: 60%;
-    max-width: 80%;
     margin: 0 ;
     background-color: #f0f0f0;
     border: 2px solid #000;
@@ -34,4 +48,5 @@ img{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #333;
+    max-height: 300px;
 }
