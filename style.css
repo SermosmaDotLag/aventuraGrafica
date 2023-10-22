@@ -1,21 +1,44 @@
 /*Equipo 5*/
-
+html{
+    height: 100%;
+    width: 100%;
+}
 body{
     position: relative;
-    margin: 0 auto;
-    width: 1280px;
-    border: 1px black solid;
-    height: 720px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fondo{
+    width: 100%;
+    height: 100%;
+    background:no-repeat;
+    background-size: cover;
 }
 
 h1{
     text-align: center;
+    margin-top: 0px;
 }
 
 img{
     width: 300px;
     margin: 100px;
     display: inline-block;
+}
+
+#preguntas{
+    width: 10%;
+    min-height: 10%;
+    background-color: red;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+#preguntas>button{
+    background-color: green;
+    width: 100%;
 }
 
 #contenedor{
