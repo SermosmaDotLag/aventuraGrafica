@@ -5,6 +5,8 @@ import { Escena } from './escena.js'
 let historia = new Escena()
 let siguiente = document.getElementById("siguiente")
 let opcion1 = document.getElementById("1")
+let opcion2 = document.getElementById("2")
+let opcion3 = document.getElementById("3")
 let escena = 1
 
 function recargarescenas(){
@@ -12,6 +14,8 @@ function recargarescenas(){
     historia.escena1()
     if(escena==2)
     historia.escena2()
+    if(escena==3)
+    historia.escena3()
 }
 
 siguiente.onclick = function() {
@@ -21,7 +25,23 @@ siguiente.onclick = function() {
 
 opcion1.onclick = function(){
     opcion1.style.display = 'none'
-    escena=2
+    escena=historia.boton1()
+    historia.reiniciarEscena()
+    historia.avanzar()
+    recargarescenas()
+}
+
+opcion2.onclick = function(){
+    opcion1.style.display = 'none'
+    escena=historia.boton2()
+    historia.reiniciarEscena()
+    historia.avanzar()
+    recargarescenas()
+}
+
+opcion3.onclick = function(){
+    opcion1.style.display = 'none'
+    escena=historia.boton3()
     historia.reiniciarEscena()
     historia.avanzar()
     recargarescenas()
