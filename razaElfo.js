@@ -1,7 +1,7 @@
 import { Personaje } from "./personaje.js"
-import { razaHumano } from "./clase_raza.js"
+import { razaElfo} from "./clase_raza.js"
 
-export class Humano extends Personaje{
+export class Elfo extends Personaje{
     #colorPelo = null
     #colorPiel = null
     constructor(nombre, clase = null, colorPelo = 'Negro', colorPiel = 'Normal'){

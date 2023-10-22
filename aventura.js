@@ -16,6 +16,14 @@ function recargarescenas(){
     historia.escena2()
     if(escena==3)
     historia.escena3()
+    if(escena==4)
+    historia.escena4()
+    if(escena==5)
+    historia.escena5()
+    if(escena==6)
+    historia.escena6()
+    if(escena==7)
+    historia.escenaFinal()
 }
 
 siguiente.onclick = function() {
